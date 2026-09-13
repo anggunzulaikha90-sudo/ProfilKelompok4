@@ -4,6 +4,10 @@
  */
 package profilkelompok.pkg4;
 
+import com.formdev.flatlaf.FlatLightLaf;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
+
 /**
  *
  * @author ANGGUN Z
@@ -54,14 +58,17 @@ public class Beranda extends javax.swing.JFrame {
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
         try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
-            logger.log(java.util.logging.Level.SEVERE, null, ex);
+            
+            
+            /*
+            UIManager.put("Button.arc", 15);
+            UIManager.put("Button.borderWidth", 0);
+            UIManager.put("TextComponent.arc", 15);
+            UIManager.put("Component.BorderWidth", 0);
+            UIManager.put("Component.focusWidth", 0);
+            UIManager.put("Component.innerFocusWidth", 0);*/
+            UIManager.setLookAndFeel(new FlatLightLaf());
+        } catch (UnsupportedLookAndFeelException unsupportedLookAndFeelException) {
         }
         //</editor-fold>
 
