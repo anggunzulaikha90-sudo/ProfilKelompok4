@@ -296,7 +296,7 @@ public class FrameAuthor extends javax.swing.JFrame {
 
         jPanel9.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel19.setText("Laki Laki");
+        jLabel19.setText("Pria");
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
@@ -305,7 +305,7 @@ public class FrameAuthor extends javax.swing.JFrame {
             .addGroup(jPanel9Layout.createSequentialGroup()
                 .addGap(17, 17, 17)
                 .addComponent(jLabel19)
-                .addContainerGap(412, Short.MAX_VALUE))
+                .addContainerGap(437, Short.MAX_VALUE))
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
